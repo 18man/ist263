@@ -28,14 +28,14 @@ nav a:hover{background-color: #fdffe3;}
 .quote{float: right;}
 .clear {clear:both;}
 
-.row1{background-color: #fdffe3; border-radius: 1em; margin:10px;}
-.address{margin:10px; float:left;}
+.row1{background-color: #fdffe3; border-radius: 1em; margin:30px;}
+.address{padding:40px; float:left; }
 
-.links{float:left;}
+.links{padding:10px; float:right;}
 
 
-.row2{display:flex; background-color: #fdffe3; border-radius: 1em;  margin:10px;}
+.row2{display:flex; background-color: #fdffe3; border-radius: 1em;  margin:30px;}
 .map, .form {margin:10px}
-.map{flex:2;}
-.form {flex:1;}
+.map{padding:15px; flex:1; order:2;}
+.form {padding:45px; flex:1; order:1;}
 
