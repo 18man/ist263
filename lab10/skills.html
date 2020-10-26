@@ -7,9 +7,21 @@
 
         <title>Skills</title>
         <link rel="stylesheet" href="styles.css">
+        <style>
+            #skip-to-content {
+                position: absolute; 
+                left: -999px;  /* positions skip to content off screen */
+                background-color: white;
+                border: 1px solid gray;
+                }
+            #skip-to-content:focus {position: absolute; left: 10px;}
+            /* pseudo class that moves skip to content back on screen */
+        </style>
     </head>
 
     <body>
+        <a id="skip-to-content" href="#content">Skip to Content</a>
+    <!-- this will link you down to the content a tag with id of skip-to-content -->
         <nav>
             <a href="index.html">home</a> 
             <a href="contact.html">contact</a>
