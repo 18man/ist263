@@ -44,8 +44,8 @@ nav{
 nav a {color: #dfdfdf;}
 nav a:hover{background-color: #94ad86;}
 
-.imgL{margin-right: 100px;  float:left; padding:10px;}
-.imgR{margin-right: 100px;  float:right; padding:10px;}
+.imgL{margin-right: 100px;  float:left; padding:10px; max-width:100%;}
+.imgR{margin-right: 100px;  float:right; padding:10px;max-width:100%;}
 
 .container{
     display:flex; justify-content:center; flex-wrap: wrap;
