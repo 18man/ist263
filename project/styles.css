@@ -12,8 +12,21 @@ p{
     font-family: "Tahoma", Geneva, sans-serif;
     padding:25px;
     line-height:1.5;
-    
+    margin:15px;   
 
+}
+
+ol{
+    font-family: "Tahoma", Geneva, sans-serif;
+    padding:70px;
+}
+
+table{
+    font-family: "Tahoma", Geneva, sans-serif;
+    padding:40px;
+    border:1px dashed;    
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1{
