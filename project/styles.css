@@ -48,14 +48,13 @@ nav a:hover{background-color: #94ad86;}
 .imgR{margin-right: 100px;  float:right; padding:10px;max-width:100%;}
 
 .container{
-    display:flex; justify-content:center; flex-wrap: wrap;
+    display:flex; justify-content:center; flex-wrap: wrap; text-align:center;
 }
 
 .clear {clear:both;}
 
 .row1{background-color: #fdffe3; border-radius: 1em; margin:30px;}
 
-.links{padding:10px; float:right;}
 
 
 .row2{display:flex; background-color: #fdffe3; border-radius: 1em;  margin:30px; flex-wrap: wrap;}
@@ -66,5 +65,8 @@ nav a:hover{background-color: #94ad86;}
     nav a{
         display:block;
         width:100%;
+    }
+    link{
+        text-justify:center;
     }
 }
