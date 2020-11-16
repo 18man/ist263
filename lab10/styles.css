@@ -12,7 +12,13 @@ p{
 }
 
 h1{
-    color: #7E162B
+    color: #7E162B;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+h2{
+
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 nav{
