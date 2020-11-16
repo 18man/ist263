@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap" rel="stylesheet">
+
+        <title>Skills</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            #skip-to-content {
+                position: absolute; 
+                left: -999px;  /* positions skip to content off screen */
+                background-color: white;
+                border: 1px solid gray;
+                }
+            #skip-to-content:focus {position: absolute; left: 10px;}
+            /* pseudo class that moves skip to content back on screen */
+
+            #ist233, #ist346, #sysmock, #workstationmgmt {display: none};
+
+            #ist233, #ist387, #ist346 {height: 200px};
+
+            .transition {
+                display:block;
+                transition-property: opacity;
+                transition-duration: .5s;
+                transition-timing-function: ease-in-out;
+                transition: all .2s ease-in-out;
+            }
+            .transition:focus {
+            opacity: 0;
+            }
+
+            .button {
+                position:relative;
+                top:3px;
+                transition-duration: .2s;
+                transition-timing-function: ease-out;
+            }
+            .button:hover{
+                top:0px;;
+            }
+            .button:active{
+                top:6px;
+            }
+            
+        </style>
+
+        <script>
+            function ImagesOff(){
+                document.getElementById('ist387').style.display='none';
+                document.getElementById('ist233').style.display='none';
+                document.getElementById('ist346').style.display='none';
+
+                document.getElementById('datavis').style.display='none';
+                document.getElementById('sysmock').style.display='none';
+                document.getElementById('workstationmgmt').style.display='none';
+            }
+            function IST387On(){
+           document.getElementById('ist387').style.display = 'block';
+           document.getElementById('datavis').style.display ='block';
+            }
+
+            function IST233On(){
+           document.getElementById('ist233').style.display = 'block';
+           document.getElementById('sysmock').style.display ='block';
+            }
+
+            function IST346On(){
+           document.getElementById('ist346').style.display = 'block';
+           document.getElementById('workstationmgmt').style.display ='block';
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <a id="skip-to-content" href="#content">Skip to Content</a>
+    <!-- this will link you down to the content a tag with id of skip-to-content -->
+        <nav>
+            <a href="index.html">home</a> 
+            <a href="contact.html">contact</a>
+            <a href="skills.html">skills</a>
+            <a href="projects.html">projects</a>
+        </nav>
+        <a id="content"></a>
+        <h1>Mel's Projects</h1>
+        <div id="thumbnails">
+            <img src="./xcredit_files/xcredit1_thumb.png" alt="IST 387" id="ist387thumb" onclick="ImagesOff(); IST387On();" class="button">
+            <img src="./xcredit_files/xcredit2_thumb.png" alt="IST 233" id="ist233thumb" onclick="ImagesOff(); IST233On();" class="button">
+            <img src="./xcredit_files/xcredit3_thumb.png" alt="IST 346" id="ist346thumb" onclick="ImagesOff(); IST346On();" class="button">
+           </div>
+        <p></p>
+        
+        <div id="projectinfo">        
+            <h1>Class Projects</h1>
+            <div id="datavis" class="transition">
+                <h2>IST 387</h2>
+                <p>Learning how to process and visualize data in R studio.</p>
+                </div>
+            <div id="sysmock" class="transition">
+                <h2>IST 233</h2>
+                <p>Designing a mockup for a business system, in this case, an order queue for a deli.</p>    
+                </div>
+            <div id="workstationmgmt" class="transition">
+                <h2>IST 346</h2>
+                <p>Creating a proposal for a workstation solution for a specific firm, including a table of costs.</p>
+            </div>
+
+            <div id="projectimages">
+                <img src="./xcredit_files/xcredit1.jpg" alt="data visualization" id="ist387" class="transition">
+                <img src="./xcredit_files/xcredit2.png" alt="system mockup" id="ist233" class="transition">
+                <img src="./xcredit_files/xcredit3.jpg" alt="workstation management" id="ist346" class="transition">
+            </div>
+
+        </div>
+
+        
+        
+    </body>
+</html>
