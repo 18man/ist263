@@ -24,15 +24,18 @@
 
             #ist233, #ist387, #ist346 {height: 200px};
 
-            .transition {
-                display:block;
-                transition-property: opacity;
-                transition-duration: .5s;
-                transition-timing-function: ease-in-out;
-                transition: all .2s ease-in-out;
+            .imagetransition {
+                opacity:80%;
+                transition-duration: .2s;
+                transition-timing-function: ease-out;
             }
-            .transition:focus {
-            opacity: 0;
+            .imagetransition:hover {
+                opacity:100%;
+            }
+
+            .imagetransition:display {
+                opacity:20%;
+                transition-duration:2s;
             }
 
             .button {
@@ -42,7 +45,7 @@
                 transition-timing-function: ease-out;
             }
             .button:hover{
-                top:0px;;
+                top:0px;
             }
             .button:active{
                 top:6px;
@@ -53,6 +56,7 @@
         <script>
             function ImagesOff(){
                 document.getElementById('ist387').style.display='none';
+                document.getElementById('ist387').style.transform='translateY(-4px)';
                 document.getElementById('ist233').style.display='none';
                 document.getElementById('ist346').style.display='none';
 
@@ -98,23 +102,23 @@
         
         <div id="projectinfo">        
             <h1>Class Projects</h1>
-            <div id="datavis" class="transition">
+            <div id="datavis" class="imagetransition">
                 <h2>IST 387</h2>
                 <p>Learning how to process and visualize data in R studio.</p>
                 </div>
-            <div id="sysmock" class="transition">
+            <div id="sysmock" class="imagetransition">
                 <h2>IST 233</h2>
                 <p>Designing a mockup for a business system, in this case, an order queue for a deli.</p>    
                 </div>
-            <div id="workstationmgmt" class="transition">
+            <div id="workstationmgmt" class="imagetransition">
                 <h2>IST 346</h2>
                 <p>Creating a proposal for a workstation solution for a specific firm, including a table of costs.</p>
             </div>
 
             <div id="projectimages">
-                <img src="./xcredit_files/xcredit1.jpg" alt="data visualization" id="ist387" class="transition">
-                <img src="./xcredit_files/xcredit2.png" alt="system mockup" id="ist233" class="transition">
-                <img src="./xcredit_files/xcredit3.jpg" alt="workstation management" id="ist346" class="transition">
+                <img src="./xcredit_files/xcredit1.jpg" alt="data visualization" id="ist387" class="imagetransition">
+                <img src="./xcredit_files/xcredit2.png" alt="system mockup" id="ist233" class="imagetransition">
+                <img src="./xcredit_files/xcredit3.jpg" alt="workstation management" id="ist346" class="imagetransition">
             </div>
 
         </div>
