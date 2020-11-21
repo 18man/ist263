@@ -25,17 +25,14 @@
             #ist233, #ist387, #ist346 {height: 200px};
 
             .imagetransition {
-                opacity:80%;
                 transition-duration: .2s;
                 transition-timing-function: ease-out;
             }
-            .imagetransition:hover {
-                opacity:100%;
-            }
 
-            .imagetransition:display {
-                opacity:20%;
+            .imagetransition.transform {
+                transition: scale 2s;
                 transition-duration:2s;
+                transition-timing-function: ease-out;
             }
 
             .button {
@@ -50,13 +47,14 @@
             .button:active{
                 top:6px;
             }
+
+            
             
         </style>
 
         <script>
             function ImagesOff(){
                 document.getElementById('ist387').style.display='none';
-                document.getElementById('ist387').style.transform='translateY(-4px)';
                 document.getElementById('ist233').style.display='none';
                 document.getElementById('ist346').style.display='none';
 
@@ -67,6 +65,7 @@
             function IST387On(){
            document.getElementById('ist387').style.display = 'block';
            document.getElementById('datavis').style.display ='block';
+                    
             }
 
             function IST233On(){
@@ -77,6 +76,19 @@
             function IST346On(){
            document.getElementById('ist346').style.display = 'block';
            document.getElementById('workstationmgmt').style.display ='block';
+           
+            }
+
+            function ImageBiggus(){
+                document.getElementById('ist346').style.transform= 'scale(1.25)';
+                document.getElementById('ist233').style.transform= 'scale(1.25)';
+                document.getElementById('ist387').style.transform= 'scale(1.25)';
+            }
+
+            function ImageSmallus(){
+                document.getElementById('ist346').style.transform= 'scale(1)';
+                document.getElementById('ist233').style.transform= 'scale(1)';
+                document.getElementById('ist387').style.transform= 'scale(1)';
             }
 
         </script>
@@ -102,6 +114,10 @@
         
         <div id="projectinfo">        
             <h1>Class Projects</h1>
+            <div id="zoombuttons">
+                <img src="./xcredit_files/zoomin.png" alt="zoom in" id="zoomin" onclick="ImageBiggus();" class="button">
+                <img src="./xcredit_files/zoomout.png" alt="zoom out" id="zoomout" onclick="ImageSmallus();" class="button">
+            </div>
             <div id="datavis" class="imagetransition">
                 <h2>IST 387</h2>
                 <p>Learning how to process and visualize data in R studio.</p>
@@ -114,6 +130,8 @@
                 <h2>IST 346</h2>
                 <p>Creating a proposal for a workstation solution for a specific firm, including a table of costs.</p>
             </div>
+
+            
 
             <div id="projectimages">
                 <img src="./xcredit_files/xcredit1.jpg" alt="data visualization" id="ist387" class="imagetransition">
