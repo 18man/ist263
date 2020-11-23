@@ -41,6 +41,9 @@ nav{
     margin-bottom:30px;
     font-family: "Tahoma", Geneva, sans-serif;
 }
+
+
+
 nav a {color: #dfdfdf;}
 nav a:hover{background-color: #94ad86;}
 
@@ -51,9 +54,12 @@ nav a:hover{background-color: #94ad86;}
     display:flex; justify-content:center; flex-wrap: wrap; text-align:center;
 }
 
+.diaoyuimg, .paiguimg {max-width:100%}
+
 .clear {clear:both;}
 
 .row1{background-color: #fdffe3; border-radius: 1em; margin:30px;}
+
 
 
 

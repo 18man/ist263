@@ -17,6 +17,27 @@
             #skip-to-content:focus {position: absolute; left: 10px;}
             /* pseudo class that moves skip to content back on screen */
         </style>
+
+        <script>
+        function RecipesOff(){
+            document.getElementById('diaoyuimg').style.display='none';
+            document.getElementById('diaoyutxt').style.display='none';
+
+            document.getElementById('paiguimg').style.display='none';
+            document.getElementById('paigutxt').style.display='none';
+        }
+
+        function DiaoyuOn(){
+            document.getElementById('diaoyuimg').style.display='block';
+            document.getElementById('diaoyutxt').style.display='block'
+        }
+
+        function PaiguOn(){
+            document.getElementById('paiguimg').style.display='block';
+            document.getElementById('paigutxt').style.display='block';
+        }
+
+        </script>
     </head>
 
     <body>
@@ -34,17 +55,15 @@
         <a id="content"></a>
         
         <p>Here you'll find the knowledge bestowed upon me by my father, via WeChat calls. These recipes are very loose and unspecific, because he never makes them the same way twice, and neither should you! Consider these more as bases for you to experiment with and put your own spin on. </p>
-        <div class="container">        
-            <div><img src="media/diaoyu10.JPG" alt="Diaoyu" > 
-            
-                <p><a href="recipe_diaoyu.html">Diaoyu</a></div></p>
-                
+        <p><button onclick="RecipesOff(); DiaoyuOn();"> << </button>
+        <button onclick="RecipesOff(); PaiguOn();"> >> </button></p>
 
-                <div><img src="media/paigu5.JPG" alt="Paigu" > 
-            
-                <p><a href="recipe_paigu.html">Paigu</a></div></p>
+        <div class="container">        
+            <div><div id="diaoyuimg"><img src="media/diaoyu10.JPG" alt="Diaoyu" > </div>
+                <div id="diaoyutxt"><p><a href="recipe_diaoyu.html">Diaoyu</a></div></p></div>
                 
-         
+                <div><div id="paiguimg"><img src="media/paigu5.JPG" alt="Paigu" > </div>
+                <div id="paigutxt"><p><a href="recipe_paigu.html">Paigu</a></div></p></div>
             </div> 
         <hr>
         </main>
