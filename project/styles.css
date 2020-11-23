@@ -49,6 +49,7 @@ nav a:hover{background-color: #94ad86;}
 
 .imgL{margin-right: 100px;  float:left; padding:10px; max-width:100%;}
 .imgR{margin-right: 100px;  float:right; padding:10px; max-width:100%;}
+.recipeimg{margin-right: 100px;  padding:10px; max-width:100%;}
 
 .container{
     display:flex; justify-content:center; flex-wrap: wrap; text-align:center;
@@ -77,4 +78,5 @@ nav a:hover{background-color: #94ad86;}
     }
     .imgL{margin-left: auto; margin-right:auto; float:left; padding:10px; max-width:100%;}
     .imgR{margin-left: auto; margin-right:auto; float:right; padding:10px; max-width:100%;}
+    .recipeimg{margin-left: auto; margin-right:auto; float:right; padding:10px; max-width:100%;}
 }
